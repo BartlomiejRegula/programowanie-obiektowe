@@ -1,0 +1,38 @@
+/* Stylowanie głównego kontenera aplikacji */
+body {
+  display: flex;
+  flex-direction: column; /* Ustawienie elementów w kolumnie */
+  justify-content: center; /* Wyśrodkowanie pionowe */
+  align-items: center; /* Wyśrodkowanie poziome */
+  height: 100vh; /* Pełna wysokość widoku */
+  text-align: center; /* Wyśrodkowanie tekstu */
+}
+.fullscreen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1000; /* Zapewnia, że obraz będzie na wierzchu */
+}
+/* Kontener dla obrazu na pełnym ekranie */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Opcjonalne ciemne tło */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Pełnoekranowy obraz */
+.fullscreen-image {
+  width: 100vw; /* Obraz na całą szerokość */
+  height: 100vh; /* Obraz na całą wysokość */
+  object-fit: cover; /* Skalowanie obrazu, aby wypełnił cały ekran */
+}
