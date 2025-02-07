@@ -24,7 +24,7 @@ export default function App() {
       {/* Jeśli `showImage` jest true, wyświetl obraz */}
       {showImage && (
         <div className="overlay">
-          <img src="/primosz.png" alt="Obraz" className="fullscreen-image" />
+          <img src="/programowanie-obiektowe/primosz.png" alt="Obraz" className="fullscreen-image" />
         </div>
       )}
     </div>
